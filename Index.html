@@ -1,41 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Telegram Button</title>
-    <style>
-        body {
-            text-align: center;
-            padding: 50px;
-            background-color: #121212;
-        }
-
-        .telegram-btn {
-            display: inline-block;
-            background-color: #0088cc;
-            color: white;
-            padding: 12px 25px;
-            font-size: 20px;
-            text-align: center;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-            box-shadow: 0px 5px 10px rgba(0, 136, 204, 0.3);
-        }
-
-        .telegram-btn:hover {
-            background-color: #005f99;
-            box-shadow: 0px 8px 15px rgba(0, 136, 204, 0.5);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Premium Join Telegram Button</title>
+  <style>
+    /* बेस स्टाइलिंग */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    /* प्रीमियम बटन स्टाइल */
+    .telegram-btn {
+      display: inline-block;
+      background: linear-gradient(45deg, #0088cc, #00c6ff);
+      color: #fff;
+      padding: 20px 40px;
+      font-size: 24px;
+      text-align: center;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    /* एनिमेटेड ग्लो इफेक्ट */
+    .telegram-btn::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10%);
+      background-size: 50px 50px;
+      animation: shine 3s linear infinite;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    
+    @keyframes shine {
+      0% {
+        transform: translateX(0) translateY(0);
+      }
+      100% {
+        transform: translateX(50%) translateY(50%);
+      }
+    }
+    
+    .telegram-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    }
+    
+    .telegram-btn:hover::before {
+      opacity: 1;
+    }
+    
+    /* Responsive टेक्स्ट साइजिंग */
+    @media (max-width: 600px) {
+      .telegram-btn {
+        font-size: 20px;
+        padding: 15px 30px;
+      }
+    }
+  </style>
 </head>
 <body>
-
-    <a href="https://t.me/YOUR_TELEGRAM_LINK" target="_blank" class="telegram-btn">
-        Join Telegram
-    </a>
-
+  <a href="https://t.me/YOUR_TELEGRAM_LINK" target="_blank" class="telegram-btn">
+    Join Telegram
+  </a>
 </body>
 </html>
