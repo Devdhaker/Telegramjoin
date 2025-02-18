@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Premium Join Telegram Buttons</title>
+  <style>
+    /* बेस स्टाइलिंग */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    h1 {
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* प्रीमियम बटन स्टाइल */
+    .telegram-btn {
+      display: inline-block;
+      color: #fff;
+      padding: 15px 35px;
+      font-size: 22px;
+      text-align: center;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* एनिमेटेड ग्लो इफेक्ट */
+    .telegram-btn::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10%);
+      background-size: 50px 50px;
+      animation: shine 3s linear infinite;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    @keyframes shine {
+      0% {
+        transform: translateX(0) translateY(0);
+      }
+      100% {
+        transform: translateX(50%) translateY(50%);
+      }
+    }
+
+    .telegram-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .telegram-btn:hover::before {
+      opacity: 1;
+    }
+
+    /* अलग-अलग बटन कलर */
+    .btn-1 { background: linear-gradient(45deg, #0088cc, #00c6ff); }
+    .btn-2 { background: linear-gradient(45deg, #ff416c, #ff4b2b); }
+    .btn-3 { background: linear-gradient(45deg, #8e44ad, #c0392b); }
+    .btn-4 { background: linear-gradient(45deg, #27ae60, #2ecc71); }
+    .btn-5 { background: linear-gradient(45deg, #ff9a8b, #ff6a88, #ff99ac); }
+    .btn-6 { background: linear-gradient(45deg, #1e3c72, #2a5298); }
+
+    /* Responsive टेक्स्ट साइजिंग */
+    @media (max-width: 600px) {
+      .telegram-btn {
+        font-size: 18px;
+        padding: 12px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Join Our Telegram Channels</h1>
+
+  <a href="  https://t.me/+sWpejtW90ogwYTQ1" target="_blank" class="telegram-btn btn-1">🌹भाभी वीडियो ज्वाइन करे 🔗</a>
+  <a href="  https://t.me/+sWpejtW90ogwYTQ1   " target="_blank" class="telegram-btn btn-2">🥰 देसी वीडियो ज्वाइन करे 🌹</a>
+  <a href= "  https://t.me/+sWpejtW90ogwYTQ1    " target="_blank" class="telegram-btn btn-3">🔥 वायरल वीडियो लिंक 😍</a>
+  <a href="    https://t.me/+sWpejtW90ogwYTQ1   " target="_blank" class="telegram-btn btn-4">English Video Link 😎</a>
+  <a href="   https://t.me/+sWpejtW90ogwYTQ1   " target="_blank" class="telegram-btn btn-5">Indian न्यू वीडियो 💦</a>
+  <a href="   https://t.me/+sWpejtW90ogwYTQ1  " target="_blank" class="telegram-btn btn-6">सभी तरह की वेबसरीज वीडियो 📍</a>
+
+</body>
+</html>
