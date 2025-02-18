@@ -1,128 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Telegram Information & Join Button</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4 Buttons Example</title>
   <style>
-    /* बेस स्टाइलिंग */
     body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #1f1c2c, #928dab);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #111;
       color: #fff;
+      font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      height: 100vh;
+      margin: 0;
     }
-    
-    /* प्रीमियम बटन स्टाइल */
-    .telegram-btn {
-      display: inline-block;
-      background: linear-gradient(45deg, #0088cc, #00c6ff);
-      color: #fff;
-      padding: 20px 40px;
-      font-size: 24px;
+    .container {
       text-align: center;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-      letter-spacing: 1px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s, box-shadow 0.3s;
-      position: relative;
-      overflow: hidden;
-      margin-top: 50px;
     }
-    
-    /* एनिमेटेड ग्लो इफेक्ट */
-    .telegram-btn::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: radial-gradient(circle, rgba(255,255,255,0.2) 10%, transparent 10%);
-      background-size: 50px 50px;
-      animation: shine 3s linear infinite;
-      opacity: 0;
-      transition: opacity 0.3s;
+    .button {
+      display: block;         /* हर बटन को अलग लाइन में दिखाता है */
+      width: 200px;           /* बटन की चौड़ाई */
+      margin: 10px auto;      /* ऊपर नीचे spacing और center alignment */
+      padding: 12px 20px;
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      border: none;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;  /* लिंक के underline को हटाता है */
+      border-radius: 5px;
+      cursor: pointer;
     }
-    
-    @keyframes shine {
-      0% {
-        transform: translateX(0) translateY(0);
-      }
-      100% {
-        transform: translateX(50%) translateY(50%);
-      }
-    }
-    
-    .telegram-btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
-    }
-    
-    .telegram-btn:hover::before {
-      opacity: 1;
-    }
-    
-    /* Telegram जानकारी सेक्शन */
-    .telegram-info {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 30px;
-      border-radius: 12px;
-      margin: 40px 20px;
-      max-width: 800px;
-      text-align: left;
-      line-height: 1.6;
-    }
-    
-    .telegram-info h2 {
-      margin-top: 0;
-      font-size: 28px;
-      border-bottom: 2px solid #0088cc;
-      padding-bottom: 10px;
-    }
-    
-    /* Responsive टेक्स्ट साइजिंग */
-    @media (max-width: 600px) {
-      .telegram-btn {
-        font-size: 20px;
-        padding: 15px 30px;
-      }
-      
-      .telegram-info {
-        padding: 20px;
-      }
-      
-      .telegram-info h2 {
-        font-size: 24px;
-      }
+    .button:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
-  <!-- Join Telegram Button -->
-  <a href="https://t.me/YOUR_TELEGRAM_LINK" target="_blank" class="telegram-btn">
-    Join Telegram
-  </a>
-  
-  <!-- Telegram Information Section -->
-  <div class="telegram-info">
-    <h2>Telegram के बारे में जानकारी</h2>
-    <p>
-      Telegram एक तेज, सुरक्षित और उपयोग में आसान मैसेजिंग एप्लिकेशन है। इसमें एन्क्रिप्टेड चैट, 
-      ग्रुप चैट, चैनल और फ़ाइल शेयरिंग जैसी सुविधाएं हैं। Telegram का उद्देश्य यूज़र्स को निजी और 
-      सुरक्षित संचार प्रदान करना है, जिससे आप अपने दोस्तों, परिवार और समुदाय के साथ आसानी से जुड़ सकें।
-    </p>
-    <p>
-      यदि आप अधिक जानकारी चाहते हैं या किसी विशेष विषय पर चर्चा करना चाहते हैं, तो कृपया हमारे 
-      Telegram ग्रुप में शामिल हों।
-    </p>
+  <div class="container">
+    <a href="join.html" class="button">Button 1</a>
+    <a href="join.html" class="button">Button 2</a>
+    <a href="join.html" class="button">Button 3</a>
+    <a href="join.html" class="button">Button 4</a>
   </div>
 </body>
 </html>
